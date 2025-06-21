@@ -3,11 +3,11 @@ import os
 from ultralytics import YOLO
 
 # Load your trained model
-model = YOLO(r"C:\Users\User\runs\detect\car_logo_detector5\weights\best.pt")
+model = YOLO(r"runs/detect/car_logo_detector/weights/best.pt")
 
 # Configure paths
-input_folder = r"C:\Users\User\OneDrive - mmu.edu.my\Documents\Degree Y2 S3\Pattern Recognition\Full_Image"
-output_folder = r"C:\Users\User\OneDrive - mmu.edu.my\Documents\Degree Y2 S3\Pattern Recognition\Model_Cropped_Images"
+input_folder = r"C:\path\to\your\car_images"
+output_folder = r"C:\path\to\cropped_logos"
 os.makedirs(output_folder, exist_ok=True)
 
 # Process images
