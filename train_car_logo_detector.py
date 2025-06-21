@@ -8,7 +8,7 @@ model = YOLO("yolov8n.yaml")  # or "yolov8n.pt" for transfer learning
 
 # Train the model (update paths as needed)
 results = model.train(
-    data=r"C:\Users\User\Downloads\TPR_Car_Logo_Detector.v2i.yolov8\data.yaml",
+    data=r"C:\path\to\TPR_Car_Logo_Detector.v1i.yolov8\data.yaml"
     epochs=50,  # Increase if needed (~50-100 is typical)
     imgsz=640,  # Image size
     batch=8,    # Reduce if you get CUDA out-of-memory errors
